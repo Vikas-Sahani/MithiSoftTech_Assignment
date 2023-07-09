@@ -41,23 +41,6 @@ class BookIndexer {
     });
   }
 
-  //   generateIndexFile(filename) {
-  //     const sortedWords = Object.keys(this.wordIndex).sort();
-  //     let output = "";
-
-  //     sortedWords.forEach((word) => {
-  //       const pages = Array.from(this.wordIndex[word]).join(",");
-  //       output += `${word} : ${pages}\n`;
-  //     });
-
-  //     try {
-  //       fs.writeFileSync(filename, output);
-  //       console.log(`Index file ${filename} generated successfully.`);
-  //     } catch (error) {
-  //       console.error("Error generating index file:", error);
-  //     }
-  //   }
-
   generateIndexFile(filename) {
     const sortedWords = Object.keys(this.wordIndex).sort();
     let output = "";
